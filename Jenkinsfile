@@ -25,6 +25,11 @@ stages
    { 
        steps {sh 'echo deploy-to-qa-env'}
     }
+
+   stage ('trigger email')
+   { 
+       steps {sh 'echo trigger-email'}
+    }
    
 
 }
